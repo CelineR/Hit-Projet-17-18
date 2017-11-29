@@ -10,11 +10,7 @@ Les technologies abordées sont :
 - OpenCV
 - Google MAP
 
-Pour mettre en place l'étude de cas il sera mis à disposition un server qui sera requété par l'application pour obtenir les inforations au format JSON ce serveur utilisera 
+Pour mettre en place l'étude de cas il sera mis à disposition un server qui sera requété par l'application pour obtenir les informations au format JSON,  ce serveur utilisera :
 - une base de données MySQL
 - un serveur PHP ou Wildfly ou Django (l'objectif étant d'avoir une couche d'abstraction pour simplifier les modifications)
-
-
-
-
 
