@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <!--
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -28,10 +29,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SubscriptionActivity"
+        <activity
+            android:name=".SubscriptionActivity"
             android:label="@string/subscription_title"
-            android:parentActivityName=".LoginActivity"/>
-        <activity android:name=".LoginActivity"/>
+            android:parentActivityName=".LoginActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".ReceiptsActivity"
+            android:parentActivityName=".MenuActivity"
+            android:label="@string/menu_receipt" />
+        <activity android:name=".StoresActivity"
+            android:parentActivityName=".MenuActivity"
+            android:label="@string/menu_stores" />
+        <activity android:name=".ProductsActivity"
+            android:parentActivityName=".MenuActivity"
+            android:label="@string/menu_products" />
+        <activity android:name=".ProductListActivity"
+            android:parentActivityName=".MenuActivity"
+            android:label="@string/menu_list" />
+        <activity android:name=".AlerteActivity"
+            android:parentActivityName=".MenuActivity"
+            android:label="@string/menu_alert" />
+        <activity android:name=".ConsumptionActivity"
+            android:parentActivityName=".MenuActivity"
+            android:label="@string/menu_conso" />
+        <activity android:name=".ParametersActivity"
+            android:parentActivityName=".MenuActivity"
+            android:label="@string/menu_settings"></activity>
     </application>
 
 </manifest>

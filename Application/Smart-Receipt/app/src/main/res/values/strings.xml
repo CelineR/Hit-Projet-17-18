@@ -24,5 +24,14 @@
     <!-- "Contacts permissions are needed for providing email
         completions." -->
     <string name="permission_rationale">La permission d\'accèder aux contacts du téléphone est requis pour l\'auto-complètion des adresses email</string>
-    <string name="title_activity_login2">Sign in</string>
+
+    <string name="menu_receipt">Tickets de caisse</string>
+    <string name="menu_stores">Points de vente</string>
+    <string name="menu_products">Produits</string>
+    <string name="menu_list">Liste de course</string>
+    <string name="menu_alert">Alertes</string>
+    <string name="menu_conso">Consomation</string>
+    <string name="menu_settings">Paramètres</string>
+    <string name="menu_disconnect">Déconnexion</string>
+
 </resources>

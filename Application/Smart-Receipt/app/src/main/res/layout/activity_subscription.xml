@@ -36,7 +36,7 @@
                 <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Adresse email" />
+                    android:hint="Adresse email*" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -46,7 +46,7 @@
                 <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Confirmer adresse email" />
+                    android:hint="Confirmer adresse email*" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -62,7 +62,7 @@
                 <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Mot de passe" />
+                    android:hint="Mot de passe*" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -72,7 +72,7 @@
                 <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Confirmer mot de passe" />
+                    android:hint="Confirmer mot de passe*" />
             </android.support.design.widget.TextInputLayout>
 
             <Space
@@ -115,10 +115,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-            <Space
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Téléphone fixe" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_weight="1" />
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Téléphone mobile" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1" />
 
                 <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
@@ -143,7 +163,7 @@
                 <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Ville" />
+                    android:hint="Ville*" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -153,8 +173,32 @@
                 <android.support.design.widget.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Pays" />
+                    android:hint="Pays*" />
             </android.support.design.widget.TextInputLayout>
+
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="J'accepte les conditions générales d'utilisation" />
+
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Je souhaite recevoir des offres des partenaires du service" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*Champs obligatoires"
+                android:textSize="10sp"
+                android:textStyle="italic" />
 
             <Button
                 android:id="@+id/subscription_button"
