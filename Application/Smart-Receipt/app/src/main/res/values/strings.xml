@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Smart Receipt</string>
+    <string name="app_version">1.0</string>
+    <string name="subscription">S\'inscrire</string>
+    <string name="subscription_title">Inscription</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <!-- Password (optional)-->
+    <string name="prompt_password">Mot de passe</string>
+    <!-- Sign in or register-->
+    <string name="action_sign_in">Connexion</string>
+    <!-- Sign in or register-->
+    <string name="action_subscription">S\'INSCRIRE</string>
+    <!-- Sign in-->
+    <string name="action_sign_in_short">Connexion</string>
+    <!-- This email address is invalid-->
+    <string name="error_invalid_email">Adresse email invalide</string>
+    <!-- This password is too short-->
+    <string name="error_invalid_password">Mot de passe trop court</string>
+    <!-- This password is incorrect-->
+    <string name="error_incorrect_password">Mot de passe incorrect</string>
+    <!-- This field is required -->
+    <string name="error_field_required">Ce champ doit être rempli</string>
+    <!-- "Contacts permissions are needed for providing email
+        completions." -->
+    <string name="permission_rationale">La permission d\'accèder aux contacts du téléphone est requis pour l\'auto-complètion des adresses email</string>
+    <string name="title_activity_login2">Sign in</string>
+</resources>
