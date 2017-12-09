@@ -15,10 +15,28 @@ android {
             }
         }
     }
+    sourceSets.main.jni.srcDirs = []
+
+    task ndkBuild(type: Exec, description: 'Compile JNI source via NDK') {
+        def ndkDir = "/home/wenfahu/NVPACK/android-sdk-linux/ndk-bundle"
+        commandLine "$ndkDir/ndk-build",
+                'NDK_PROJECT_PATH=build/intermediates/ndk',
+                'NDK_LIBS_OUT=src/main/jniLibs',
+                'APP_BUILD_SCRIPT=src/main/jni/Android.mk',
+                'NDK_APPLICATION_MK=src/main/jni/Application.mk'
+    }
+
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn ndkBuild
+    }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable = true
+            jniDebuggable true
         }
     }
     externalNativeBuild {
@@ -29,12 +47,22 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.android.support:design:26.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation project(':openCVLibrary2411')
 }
 android.defaultConfig.vectorDrawables.useSupportLibrary = true
+
+task ndkBuild(type: Exec, description: 'Compile JNI source via NDK') {
+    def ndkDir = "/home/wenfahu/NVPACK/android-sdk-linux/ndk-bundle"
+    commandLine "$ndkDir/ndk-build",
+            'NDK_PROJECT_PATH=build/intermediates/ndk',
+            'NDK_LIBS_OUT=src/main/jniLibs',
+            'APP_BUILD_SCRIPT=src/main/jni/Android.mk',
+            'NDK_APPLICATION_MK=src/main/jni/Application.mk'
+}

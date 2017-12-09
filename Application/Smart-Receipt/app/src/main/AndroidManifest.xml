@@ -35,27 +35,35 @@
             android:parentActivityName=".LoginActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MenuActivity" />
-        <activity android:name=".ReceiptsActivity"
-            android:parentActivityName=".MenuActivity"
-            android:label="@string/menu_receipt" />
-        <activity android:name=".StoresActivity"
-            android:parentActivityName=".MenuActivity"
-            android:label="@string/menu_stores" />
-        <activity android:name=".ProductsActivity"
-            android:parentActivityName=".MenuActivity"
-            android:label="@string/menu_products" />
-        <activity android:name=".ProductListActivity"
-            android:parentActivityName=".MenuActivity"
-            android:label="@string/menu_list" />
-        <activity android:name=".AlerteActivity"
-            android:parentActivityName=".MenuActivity"
-            android:label="@string/menu_alert" />
-        <activity android:name=".ConsumptionActivity"
-            android:parentActivityName=".MenuActivity"
-            android:label="@string/menu_conso" />
-        <activity android:name=".ParametersActivity"
-            android:parentActivityName=".MenuActivity"
-            android:label="@string/menu_settings"></activity>
+        <activity
+            android:name=".ReceiptsActivity"
+            android:label="@string/menu_receipt"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".StoresActivity"
+            android:label="@string/menu_stores"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".ProductsActivity"
+            android:label="@string/menu_products"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".ProductListActivity"
+            android:label="@string/menu_list"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".AlerteActivity"
+            android:label="@string/menu_alert"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".ConsumptionActivity"
+            android:label="@string/menu_conso"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".ParametersActivity"
+            android:label="@string/menu_settings"
+            android:parentActivityName=".MenuActivity" />
+        <activity android:name=".ScannerActivity"></activity>
     </application>
 
 </manifest>
