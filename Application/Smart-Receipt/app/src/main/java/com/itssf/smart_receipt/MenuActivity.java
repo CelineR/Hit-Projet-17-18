@@ -19,7 +19,7 @@ public class MenuActivity extends AppCompatActivity {
         mReceiptsItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MenuActivity.this, ReceiptsActivity.class);
+                Intent intent = new Intent(MenuActivity.this, MenuReceiptActivity.class);
 
                 /** purger les SESSIONS ICI**/
                 //intent.putExtra("EXTRA_ID_USER", m_idUser);
@@ -33,7 +33,7 @@ public class MenuActivity extends AppCompatActivity {
         mStoresItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MenuActivity.this, StoresActivity.class);
+                Intent intent = new Intent(MenuActivity.this, MenuStoresActivity.class);
 
                 /** purger les SESSIONS ICI**/
                 //intent.putExtra("EXTRA_ID_USER", m_idUser);

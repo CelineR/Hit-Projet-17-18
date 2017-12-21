@@ -9,4 +9,5 @@
     <dimen name="menu_list_height">60dp</dimen>
     <dimen name="menu_svg_size">30dp</dimen>
     <dimen name="menu_spacer_size">30dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>
